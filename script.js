@@ -9,6 +9,7 @@ function negativeOperator(ele){
     
     input.value=-input.value
 }
+
 function equalTo(){
     const output=eval(input.value)
 input.value=output
