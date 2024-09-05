@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator-JS</title>
+</head>
+<body>
+    <div class="calculatorContainer">
+        <div class="calculatorInput">
+            <input type="text" placeholder="               0" id="input">
+        </div>
+        <div class="buttonsContainer">
+        <div class="row">
+            <div id="C"onclick="toCancel()" class="colm">C</div>
+            <div id="()"onclick="toWrite(this)" class="colm">()</div>
+            <div id="%*"onclick="toWrite(this)" class="colm">%</div>
+            <div id="/"onclick="toWrite(this)" class="colm">/</div>
+            
+        </div>
+        <div class="row">
+            <div id="7"onclick="toWrite(this)" class="colm">7</div>
+            <div id="8"onclick="toWrite(this)" class="colm">8</div>
+            <div id="9"onclick="toWrite(this)" class="colm">9</div>
+            <div id="*"onclick="toWrite(this)" class="colm">*</div>
+            
+        </div>
+        <div class="row">
+            <div id="4"onclick="toWrite(this)" class="colm">4</div>
+            <div id="5"onclick="toWrite(this)" class="colm">5</div>
+            <div id="6"onclick="toWrite(this)" class="colm">6</div>
+            <div id="-"onclick="toWrite(this)" class="colm">-</div>
+            
+        </div>
+        <div class="row">
+            <div id="1"onclick="toWrite(this)" class="colm">1</div>
+            <div id="2"onclick="toWrite(this)" class="colm">2</div>
+            <div id="3"onclick="toWrite(this)" class="colm">3</div>
+            <div id="+"onclick="toWrite(this)" class="colm">+</div>
+            
+        </div>
+        <div class="row">
+            <div id="+/-"onclick="negativeOperator(this)" class="colm">+/-</div>
+            <div id="0"onclick="toWrite(this)" class="colm">0</div>
+            <div id="."onclick="toWrite(this)" class="colm">.</div>
+            <div id="equalsTo" onclick="equalTo()" class="colm">=</div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
